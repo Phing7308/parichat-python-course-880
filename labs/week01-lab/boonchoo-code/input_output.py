@@ -4,7 +4,11 @@ print("=== Exercise 1: Basic Input ===")
 user_name = input("What is your name? ")
 print("Hello,", user_name, "!")
 print("Nice to meet you,", user_name)
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> upstream/main
 # Exercise 2: Input with Numbers
 # Note: input() always returns a string, so we need to convert to numbers
 print("\n=== Exercise 2: Working with Numbers ===")
