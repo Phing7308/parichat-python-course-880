@@ -215,15 +215,16 @@ print(f"Ends with 'python': {text.endswith('python')}")
 
 # Modification methods
 print(f"Replace 'python' with 'java': {text.replace('python', 'java')}")
-words = text.split()
+# Replace 'python' with 'java' : welcome to the world of java
+words = text.split()# ['welcome','to','the','world','of','java']
 print(f"Split into words: {words}")
-print(f"Join with '-': {'-'.join(words)}")
+print(f"Join with '-': {'-'.join(words)}")#join with '-':welcome-to-the-world-of-java
 
 # Validation methods
 test_str = "Hello123"
 print(f"\nValidation methods for '{test_str}':")
-print(f"isalnum(): {test_str.isalnum()}")
-print(f"isalpha(): {test_str.isalpha()}")
+print(f"isalnum(): {test_str.isalnum()}")# True เพราะในนี้ไม่มีอักขระพิเศษ
+print(f"isalpha(): {test_str.isalpha()}")# False
 print(f"isdigit(): {test_str.isdigit()}")
 print(f"isupper(): {test_str.isupper()}")
 print(f"islower(): {test_str.islower()}")
