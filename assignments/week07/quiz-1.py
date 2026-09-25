@@ -12,12 +12,12 @@ class Rectangle:
 
     # Method to get the area
     def get_area(self):
-        area = selt.legth * self.width
+        area = self.length * self.width
         return area
 
     # Method to get the perimeter
     def get_perimeter(self):
-        perimeter = self.length + self.windth * 2
+        perimeter = (self.length + self.width) * 2
         return perimeter
 
 
