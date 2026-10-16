@@ -32,48 +32,46 @@ Phone: +91-9876543210
 print("=== PERSONAL INFORMATION VALIDATOR ===")
 name = input("Enter your name: ")
 age = int(input("Enter your age: "))
-phone = input("Enter your phone number:")
-
+phone = input("Enter your phone number: ")
 
 # name validate
 name_validator = True
 for char in name:
-    #print(char,char.isalpha())
-    if char.isalphe() == True or char == "":
-        name_validator = true
+    if char.isalpha() == True or char == " ":
+        name_validator = True
     else:
-        name_vzlidator = False
+        name_validator = False
         break
 
 # age validate
 age_validator = True
-if 18 <= age and age <= 65:
-    age_validator = true
+if 18 <= age <= 65:
+    age_validator = True
 else:
     age_validator = False
 
 # phone number validate
-# 10 character
 phone_validator = True
-if len(phone) !=10:
+if len(phone) != 10:
     phone_validator = False
 
 for char in phone:
     if char.isdigit() == False:
-       phone_validator = False
-       break
+        phone_validator = False
+        break
 
 print()
-print("Validation Results: ")
-if name_validator == True
-    print("Name: Valid(contains only letters and spaces)")
+print("Validation Results:")
+
+if name_validator == True:
+    print("Name: Valid (contains only letters and spaces)")
 else:
-    print("Name: Invalid (not contains only letter and spaces)")
+    print("Name: Invalid (not contains only letters and spaces)")
 
 if age_validator == True:
-    print(f"Age : Valid({age}years old)")
+    print("Age: Valid (%d years old)" % age)
 else:
-    print("Age: Invalid(less than 18 or more than 65)")
+    print("Age: Invalid (less than 18 or more than 65)")
 
 if phone_validator == True:
     print("Phone: Valid (10-digit number)")
@@ -82,5 +80,18 @@ else:
 
 print()
 print("Formatted Information:")
-print("Name:",name.upper())
+print("Name: %s" % name.upper())
 
+if 18 <= age <= 30:
+    print("Age Group: Young Adult (18-30)")
+elif 31 <= age <= 45:
+    print("Age Group: Adult (31-45)")
+elif 46 <= age <= 65:
+    print("Age Group: Middle-aged Adult (46-65)")
+else:
+    print("Age Group: Invalid Age")
+
+if phone_validator == True:
+    print("Phone: +91-%s" % phone)
+else:
+    print("Phone: Invalid Number")
